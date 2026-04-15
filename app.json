@@ -30,6 +30,12 @@
     "plugins": [
       "expo-router"
     ],
-    "scheme": "ark-assured"
+    "scheme": "ark-assured",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "3af2689c-1104-437b-92b0-18716913ef65"
+      }
+    }
   }
 }

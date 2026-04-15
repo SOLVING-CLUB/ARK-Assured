@@ -18,6 +18,7 @@ import ArkLogo from "../../components/ArkLogo";
 const { width } = Dimensions.get("window");
 const NAVY = "#061429";
 const GOLD = "#D4AF37";
+const THUB_LOGO = require("../../assets/t-hub-logo.png");
 
 const ADS = [
   { id: "1", title: "Bulk Hardware Orders", subtitle: "Save up to 30% on orders above ₹50,000", bg: "#FDF8E7" },
@@ -62,6 +63,23 @@ export default function HomeScreen() {
         <Text style={{ color: GOLD, textAlign: "center", fontSize: 11, fontWeight: "700", letterSpacing: 0.5 }}>
           🚚  Free delivery on orders above ₹10,000
         </Text>
+      </View>
+
+      <View
+        style={{
+          backgroundColor: "#ffffff",
+          borderBottomWidth: 1,
+          borderBottomColor: "#e2e8f0",
+          paddingVertical: 8,
+          paddingHorizontal: 16,
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 0,
+        }}
+      >
+        <Text style={{ color: "#4b5563", fontSize: 12, fontWeight: "700" }}>Incubated with</Text>
+        <Image source={THUB_LOGO} style={{ width: 130, height: 60, marginLeft: -18 }} resizeMode="contain" />
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false}>
