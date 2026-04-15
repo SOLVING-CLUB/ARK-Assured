@@ -58,7 +58,7 @@ export default function HomeScreen() {
       </View>
 
       {/* Banner */}
-      <View style={{ backgroundColor: NAVY, paddingVertical: 7 }}>
+      <View style={{ backgroundColor: "#0A2A66", paddingVertical: 7 }}>
         <Text style={{ color: GOLD, textAlign: "center", fontSize: 11, fontWeight: "700", letterSpacing: 0.5 }}>
           🚚  Free delivery on orders above ₹10,000
         </Text>
