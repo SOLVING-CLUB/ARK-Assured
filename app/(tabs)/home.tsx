@@ -129,20 +129,20 @@ export default function HomeScreen() {
         </View>
 
         {/* Ad Banner */}
-        <View style={{ marginHorizontal: 16, marginVertical: 14, borderRadius: 16, overflow: "hidden" }}>
+        <View style={{ marginHorizontal: 12, marginVertical: 14, borderRadius: 16, overflow: "hidden" }}>
           <FlatList
             data={ADS}
             keyExtractor={(item) => item.id}
             horizontal
             pagingEnabled
             showsHorizontalScrollIndicator={false}
-            onMomentumScrollEnd={(e) => setAdIndex(Math.round(e.nativeEvent.contentOffset.x / (width - 32)))}
+            onMomentumScrollEnd={(e) => setAdIndex(Math.round(e.nativeEvent.contentOffset.x / (width - 24)))}
             renderItem={({ item }) => (
-              <View style={{ width: width - 32, backgroundColor: item.bg, borderRadius: 16, padding: 20, height: 108, justifyContent: "center" }}>
+              <View style={{ width: width - 24, backgroundColor: item.bg, borderRadius: 16, padding: 22, height: 160, justifyContent: "center" }}>
                 <Text style={{ color: NAVY, fontSize: 16, fontWeight: "900" }}>{item.title}</Text>
-                <Text style={{ color: "#4b5563", fontSize: 13, marginTop: 5 }}>{item.subtitle}</Text>
-                <View style={{ marginTop: 10, backgroundColor: NAVY, alignSelf: "flex-start", borderRadius: 8, paddingHorizontal: 12, paddingVertical: 5 }}>
-                  <Text style={{ color: GOLD, fontSize: 11, fontWeight: "700" }}>Shop Now →</Text>
+                <Text style={{ color: "#4b5563", fontSize: 13, marginTop: 6 }}>{item.subtitle}</Text>
+                <View style={{ marginTop: 16, backgroundColor: NAVY, alignSelf: "flex-start", borderRadius: 10, paddingHorizontal: 16, paddingVertical: 8 }}>
+                  <Text style={{ color: GOLD, fontSize: 12, fontWeight: "800" }}>Shop Now →</Text>
                 </View>
               </View>
             )}
